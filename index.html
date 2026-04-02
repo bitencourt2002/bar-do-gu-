@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bar do Gu - Whisky, gin, vodka, doses, refrigerantes e açaí na garrafa em Vila Nhocuné</title>
+  <meta name="description" content="Bar do Gu em Vila Nhocuné com whisky, gin, vodka, doses, refrigerantes gelados, açaí na garrafa e o melhor açaí da região." />
+  <style>
+    :root {
+      --bg: #0b1f3a;
+      --bg-2: #102a4c;
+      --card: rgba(255, 255, 255, 0.08);
+      --text: #ffffff;
+      --muted: #d7e2f0;
+      --accent: #f4c542;
+      --whatsapp: #25d366;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      color: var(--text);
+      background: linear-gradient(180deg, var(--bg) 0%, var(--bg-2) 100%);
+    }
+
+    .container {
+      width: min(1100px, calc(100% - 32px));
+      margin: 0 auto;
+    }
+
+    header {
+      padding: 28px 0 18px;
+      text-align: center;
+    }
+
+    .logo {
+      width: 170px;
+      max-width: 70vw;
+      height: auto;
+      display: block;
+      margin: 0 auto 14px;
+      border-radius: 16px;
+      object-fit: cover;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+      background: rgba(255,255,255,0.06);
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(2rem, 5vw, 3.4rem);
+      letter-spacing: 0.5px;
+    }
+
+    .subtitle {
+      margin: 10px 0 0;
+      color: var(--muted);
+      font-size: 1.05rem;
+    }
+
+    .hero {
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 20px;
+      align-items: center;
+      padding: 18px 0 28px;
+    }
+
+    .card {
+      background: var(--card);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      border-radius: 24px;
+      padding: 22px;
+      box-shadow: 0 14px 30px rgba(0, 0, 0, 0.16);
+      backdrop-filter: blur(6px);
+    }
+
+    .hero h2 {
+      margin: 0 0 12px;
+      font-size: clamp(1.5rem, 3vw, 2.2rem);
+      color: var(--accent);
+    }
+
+    .hero p {
+      margin: 0;
+      line-height: 1.7;
+      color: var(--muted);
+      font-size: 1.03rem;
+    }
+
+    .photo {
+      width: 100%;
+      min-height: 280px;
+      border-radius: 24px;
+      object-fit: cover;
+      display: block;
+      box-shadow: 0 14px 30px rgba(0, 0, 0, 0.22);
+      background: rgba(255,255,255,0.08);
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+      padding: 0 0 28px;
+    }
+
+    .info h3, .map h3, .gallery h3 {
+      margin: 0 0 12px;
+      font-size: 1.3rem;
+    }
+
+    .info p, .info li, .map p {
+      color: var(--muted);
+      line-height: 1.7;
+      margin: 0;
+    }
+
+    ul {
+      margin: 0;
+      padding-left: 18px;
+    }
+
+    .buttons {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin-top: 18px;
+    }
+
+    .btn {
+      display: inline-block;
+      text-decoration: none;
+      border-radius: 14px;
+      padding: 12px 18px;
+      font-weight: bold;
+      transition: transform 0.2s ease, opacity 0.2s ease;
+    }
+
+    .btn:hover {
+      transform: translateY(-1px);
+      opacity: 0.95;
+    }
+
+    .btn.whatsapp {
+      background: var(--whatsapp);
+      color: white;
+    }
+
+    .btn.secondary {
+      background: rgba(255,255,255,0.12);
+      color: white;
+      border: 1px solid rgba(255,255,255,0.14);
+    }
+
+    .gallery img {
+      width: 100%;
+      height: 240px;
+      object-fit: cover;
+      border-radius: 18px;
+      display: block;
+      background: rgba(255,255,255,0.08);
+    }
+
+    .map iframe {
+      width: 100%;
+      height: 320px;
+      border: 0;
+      border-radius: 18px;
+      display: block;
+    }
+
+    .footer {
+      text-align: center;
+      padding: 10px 0 28px;
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    @media (max-width: 820px) {
+      .hero, .grid {
+        grid-template-columns: 1fr;
+      }
+
+      .map iframe {
+        height: 280px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="container">
+    <img class="logo" src="gu3.jpeg" alt="Logo do Bar do Gu" />
+    <h1>Bar do Gu</h1>
+    <p class="subtitle">Whisky, gin, vodka, doses, refrigerantes gelados e o melhor açaí da região em Vila Nhocuné</p>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div class="card">
+        <h2>Seu ponto certo para curtir</h2>
+        <p>
+          O Bar do Gu, em Vila Nhocuné, é o lugar ideal para quem procura bebidas de qualidade em um ambiente agradável e descontraído. Trabalhamos com variedade de opções como whisky, gin, vodka, doses e refrigerantes sempre gelados, perfeitos para reunir amigos e aproveitar bons momentos.
+
+          Além das bebidas, o Bar do Gu também oferece açaí na garrafa, sendo considerado por muitos clientes o melhor açaí da região. Uma opção diferenciada para quem deseja algo refrescante, sem perder a essência de um bom bar.
+
+          Se você está em Vila Nhocuné e busca um local confiável para aproveitar bebidas geladas, ambiente tranquilo e variedade de opções, o Bar do Gu é a escolha certa para curtir com amigos e família.
+        </p>
+
+        <div class="buttons">
+          <a class="btn whatsapp" href="https://wa.me/5511959239173" target="_blank" rel="noopener noreferrer">Falar no WhatsApp</a>
+          <a class="btn secondary" href="#mapa">Ver no mapa</a>
+        </div>
+      </div>
+
+      <img class="photo" src="gu5.jpeg" alt="Bebidas do Bar do Gu" />
+    </section>
+
+    <section class="grid">
+      <div class="card info">
+        <h3>Endereço</h3>
+        <p>Rua Jose Francisco Lopes, 658</p>
+
+        <h3 style="margin-top:18px;">Horário de funcionamento</h3>
+        <p>Sex a Dom, das 14:00 às 02:00</p>
+
+        <h3 style="margin-top:18px;">Destaques</h3>
+        <ul>
+          <li>Whisky</li>
+          <li>Gin</li>
+          <li>Vodka</li>
+          <li>Doses</li>
+          <li>Refrigerantes gelados</li>
+          <li>Açaí na garrafa</li>
+          <li>O melhor açaí da região</li>
+        </ul>
+      </div>
+
+      <div class="card gallery">
+        <h3>Imagem das bebidas</h3>
+        <img src="gu4.jpeg" alt="Imagem das bebidas" />
+      </div>
+    </section>
+
+    <section class="card map" id="mapa">
+      <h3>Mapa</h3>
+      <p>Veja a localização abaixo.</p>
+      <iframe
+        src="https://www.google.com/maps?q=Rua%20Jose%20Francisco%20Lopes%2C%20658&output=embed"
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        title="Mapa do Bar do Gu">
+      </iframe>
+    </section>
+  </main>
+
+  <footer class="container footer">
+    Cardápio será adicionado depois.
+  </footer>
+</body>
+</html>
